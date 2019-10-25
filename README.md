@@ -9,8 +9,8 @@ An ArcGIS toolbox for caculating the base of the Gas Hydrate Stability Zone give
 [DOWNLOAD](#)
 
 ## Index
-1. [Background](https://github.com/GISJMR/ArcGIS-RGB-to-Z-Tool/blob/master/README.md#background-1)
-2. [How to Use](https://github.com/GISJMR/ArcGIS-RGB-to-Z-Tool/blob/master/README.md#how-to-use)
+1. [Background](https://github.com/GISJMR/ArcGIS-GHSZ-Tool/blob/master/README.md#background-1)
+2. [How to Use](https://github.com/GISJMR/ArcGIS-GHSZ-Tool/blob/master/README.md#how-to-use)
 
 ## Background
 
