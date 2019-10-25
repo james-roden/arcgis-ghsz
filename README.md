@@ -22,7 +22,7 @@ The upper limit of the GHSZ occures at a depth of approximately 150 meters below
 
 Joides algorithm for calculating the GHSZ given the water depth (meters), bottom water temperature (degrees celsius), and geothermal gradient (degrees c/km):
 
-![JoidesFormula](#)
+![JoidesFormula](https://github.com/james-roden/ArcGIS-GHSZ-Tool/blob/master/joides_alg.PNG)
 
 ## How to Use
 .
