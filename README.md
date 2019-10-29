@@ -25,4 +25,4 @@ Joides algorithm for calculating the GHSZ given the water depth (meters), bottom
 ![JoidesFormula](https://github.com/james-roden/ArcGIS-GHSZ-Tool/blob/master/joides_alg.PNG)
 
 ## How to Use
-.
+- Ensure the sea floor raster has only positive values. 
