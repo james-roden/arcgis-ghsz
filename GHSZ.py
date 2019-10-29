@@ -86,7 +86,6 @@ try:
     # Array manipulation
     in_array = arcpy.RasterToNumPyArray(in_raster, nodata_to_value=99999)
     in_array = in_array.astype(int)  # Convert to int for performance
-    no_data_value = joides(99999, in_water_temp, in_geo_gradient)  # Reverse calculate no data value
     vectorised_joides = np.vectorize(joides)
     out_array = vectorised_joides(in_array, in_water_temp, in_geo_gradient)
 
