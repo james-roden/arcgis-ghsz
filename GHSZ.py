@@ -14,7 +14,6 @@ from __future__ import division
 import arcpy
 import numpy as np
 import math
-import os
 import sys
 import traceback
 
@@ -70,7 +69,7 @@ try:
     in_raster = arcpy.GetParameterAsText(0)
     in_water_temp = arcpy.GetParameter(1)
     in_geo_gradient = arcpy.GetParameter(2)
-    workspace = arcpy.GetParameterAsText(3)
+    output_raster = arcpy.GetParameter(3)
 
     # Raster information
     in_raster = arcpy.Raster(in_raster)
@@ -92,11 +91,8 @@ try:
     # Out Raster
     no_data_value = joides(99999, in_water_temp, in_geo_gradient)  # Reverse calculate no data value
     out_raster = arcpy.NumPyArrayToRaster(out_array, lower_left, cell_width, cell_height, no_data_value)
-
-    # Define raster and save output
-    final_output = os.path.join(workspace, "GHSZ_Output")
-    arcpy.CopyRaster_management(out_raster, final_output)
-    arcpy.DefineProjection_management(final_output, sr)
+    arcpy.CopyRaster_management(out_raster, output_raster)
+    arcpy.DefineProjection_management(output_raster, sr)
 
 except IncorrectRasterStats:
     arcpy.AddError("Error: Raster must be positive.")
