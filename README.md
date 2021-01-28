@@ -1,4 +1,4 @@
-# arcgis-ghz
+# arcgis-ghsz
 An ArcGIS toolbox for caculating the base of the Gas Hydrate Stability Zone given a sea floor raster. Derived from the [Joides formula](http://www.odplegacy.org/PDF/Admin/JOIDES_Journal/JJ_1992_V18_No7.pdf).
 
 *James M Roden*
